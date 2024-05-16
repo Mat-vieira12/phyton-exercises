@@ -2,7 +2,7 @@ print('Por favor, informe o que você deseja calcular: ')
 op1= print('1) Tensão')
 op2= print('2) Resistência')
 op3= print('3) Corrente')
-conta=float(input(': '))
+conta=int(input(': '))
 if conta==1:
     resistencia=float(input('Informe  a resistência: '))
     corrente=float(input('Informe a corrente: '))
