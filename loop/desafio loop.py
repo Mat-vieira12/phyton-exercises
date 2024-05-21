@@ -10,4 +10,5 @@ while iteracao>0:
         print('Senha Correta')
         print(f'Olá, {nome}. Seja bem-vindo ao nosso banco!')
         break
-    print('Sua senha foi bloqueada! Por favor, dirija-se a um de nossos caixas.')
+    if iteracao==0:
+        print('Sua senha foi bloqueada! Por favor, dirija-se a um de nossos caixas.')
