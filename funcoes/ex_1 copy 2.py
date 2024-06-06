@@ -1,23 +1,19 @@
 Aluno=[]
 nome=input('Digite o seu nome: ')
 Aluno.append(nome)
-iteracao=0
+iteracao=1
 while iteracao<=4:
-    iteracao+=1
-    nota=float(input(f'Digite a {nota}° nota: '))
+    nota=float(input(f'Digite a {iteracao}° nota: '))
     Aluno.append(nota)
+    iteracao+=1
 
-print(Aluno)
+def calcularMedia(Aluno):
+    media=sum (Aluno[1:])/4
+    return media
 
-
-
-#def calcularMedia(nota1,nota2,nota3,nota4):
-    #media=(nota1+nota2+nota3+nota4)/4
-    #return media
-
-#m=calcularMedia(n1,n2,n3,n4)
+m=calcularMedia(Aluno)
 print(f'Sua média é {m} ')
-
-#r=VerificacaoStatus (m)
-print(f'Você foi {r}')
-
+if calcularMedia(Aluno)>=5:
+    print('Você foi aprovado!')
+else:
+    print('Você foi reprovado!')
